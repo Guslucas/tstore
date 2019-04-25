@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>T-Shirts</title>
+</head>
+<body>
+    
+    <div class="central">
+        
+
+        <hgroup class="welcome">
+            <h2 class="emweb">Seja Bem Vindo</h2>
+            <h1 class="em">a melhor loja de camisetas</h1>
+            <h2 class="emweb">da Interwebs</h2>
+        </hgroup>
+
+        <div id="flex">
+            <div class="button" onclick="onLinkClick()">Começar</div>
+            
+        </div>
+
+        <hr>
+        
+        
+        <form method="GET" target="_self">
+                <h2 class="h">Info do Usuário</h2>
+                
+                <div class="form-partes">
+                    <p id="a">Bem, então vamos começar com suas informações:</p>
+                    <p><label for="nome">Nome: </label>
+                    <input type="text" id="nome" name='nome' placeholder="Nome Completo" required></p>
+                    
+                    <p><label for="E-mail">E-mail: </label>
+                    <input type="email" id='email' name="email" placeholder="jhon@example.com" required></p>
+
+                    <p>Sexo: 
+                    <input type="radio" name="sexo" id="masc" value="masc" checked="true"> <label for="masc" id="sexo">Masculino</label>
+                    <input type="radio" name="sexo" id="fem" value="fem"> <label for="fem">Feminino</label></p>
+                </div>
+
+                <h2 class="h">Tamanho</h2>
+                <div class="form-partes">
+                    <p>Eu prefiro o tamanho
+                    <select name="size" required>
+                        <option disabled="true" selected="true">Selecione</option>
+                        <option value="P">Pequeno</option>
+                        <option value="M">Médio</option>
+                        <option value="G">Grande</option>
+                        <option value="XG">Extra-Grande</option>
+                    </select></p>
+
+                    <p><input type="checkbox" id="gola" name="gola">
+                        <label for="gola">Camiseta com Gola/ Colarinho</label></p>
+                </div>
+
+
+                <div class="buttons">
+                    <input type="reset">
+                    <input class="f-em"type="submit">
+                </div>
+        </form>
+        
+
+    </div>
+
+    <footer>
+        <p>Gustavo Lucas da Rosa</p>
+        <p><a href="https://linkedin.com/in/gustavolucasdarosa" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/guslucas" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        function onLinkClick() {
+            document.querySelector('h2.h').scrollIntoView();
+        }
+    </script>
+</body>
+</html>
